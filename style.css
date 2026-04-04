@@ -1,0 +1,138 @@
+:root {
+  --primary: #F97316;
+  --bg: #FB923C;
+  --text: #C2410C;
+  --card: #EA580C;
+}
+
+
+@font-face {
+  font-family: 'mainfont';
+  src: url('font/ducados.ttf') format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'mainfont';
+}
+
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: var(--card);
+}
+
+header h1 {
+  color: var(--primary);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.navbar a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.biografia {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.abme-picbox {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+#abme-pic {
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+
+.textbox {
+  width: 60%;
+}
+
+.text1,
+.text2 {
+  background-color: #f29538;
+  border: 3px solid #C2410C;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--card);
+}
