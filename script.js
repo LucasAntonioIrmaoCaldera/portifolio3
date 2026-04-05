@@ -6,8 +6,8 @@ const projects = [
   },
   {
     title: "Projeto 2",
-    description: "Em desenvolvimento",
-    link: "#"
+    description: "Este é site é o segundo projeto, meu, postado no meu perfil do Github",
+    link: "https://lucasantonioirmaocaldera.github.io/portifolio3/"
   }
 ];
 
